@@ -1,0 +1,50 @@
+.team {
+  background-image: url(/images/Wave_White_bottom_right_shape_01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #dcd1f0;
+}
+
+.team__content {
+  .col-md-3 {
+    padding: 0 20px;
+  }
+  .team__item {
+    border-radius: 0.625rem;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    .team__item__info {
+      background-color: $bg-color;
+      padding: 1.875rem;
+      h5 {
+        @include styleText(0.75rem, 600, $primary-color);
+        margin-bottom: 0.5rem;
+      }
+      h4 {
+        @include styleText(1.475rem, 700, $font-color);
+        margin-bottom: 0.9375rem;
+      }
+      p {
+        @include styleText(0.9375rem, 400, $font-color);
+        font-family: "Roboto", sans-serif;
+      }
+    }
+    .team__item__img {
+      overflow: hidden;
+      &:hover {
+        img {
+          transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+          transform: scale(1.05);
+        }
+      }
+      img {
+        transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+      }
+    }
+    &:hover{
+        box-shadow: 0 10px 50px $font-color;
+    }
+  }
+}
+

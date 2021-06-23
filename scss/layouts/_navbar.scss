@@ -1,4 +1,8 @@
 .header {
+  top: 0;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
   .header__content {
     .navbar {
       max-height: 5rem;

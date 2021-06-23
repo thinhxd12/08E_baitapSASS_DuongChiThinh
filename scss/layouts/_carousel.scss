@@ -1,0 +1,22 @@
+.carousel {
+  padding-top: 5rem;
+  background-image: url(/images/yellow_top_wave_01.png),
+    url(/images/Violet_top_left_wave.png);
+  background-size: fixed;
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+}
+
+.carousel__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  .txt__title {
+    @include styleText(1.1rem, 600, $primary-color);
+    margin-bottom: 0.5rem;
+  }
+  .txt__header {
+    @include styleText(3.5625rem, 700, $header-color);
+  }
+}
