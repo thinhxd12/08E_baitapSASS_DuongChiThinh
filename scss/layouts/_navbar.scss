@@ -1,0 +1,84 @@
+.header {
+  .header__content {
+    .navbar {
+      max-height: 5rem;
+      padding: 0;
+      .navbar-brand {
+        img {
+          width: 5rem;
+        }
+      }
+      .collapse {
+        .navbar-nav {
+          .nav-item {
+            a {
+              @include styleText(0.8125rem, 600, $header-color);
+              padding-right: 3.125rem;
+              transition: all 0.1s linear;
+            }
+            a:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header__phone {
+  padding: 14.85px 20.25px;
+  margin: 6px;
+  border-radius: 50px;
+  font-size: 13.5px;
+  line-height: 13.5px;
+  border: 1px solid $primary-color;
+  background: $primary-color;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+  span,
+  a {
+    @include styleText(0.8125rem, 600, $color-white);
+  }
+}
+
+.header__phone::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: $color-white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: scale(0.7, 0);
+  transition: all 0.3s ease;
+}
+.header__phone:hover.header__phone::before {
+  transform: scale(1, 1);
+}
+
+.header__phone:hover {
+  a,
+  span {
+    color: $primary-color;
+    text-decoration: none;
+  }
+  border: 1px solid $primary-color;
+}
+
+.header__social {
+  margin-left: 0.3125rem;
+  a {
+    line-height: 2.375rem;
+    margin-left: 0.625rem;
+    &:hover i {
+      color: $primary-color;
+    }
+    i {
+      transition: all 0.3s ease;
+    }
+  }
+}
