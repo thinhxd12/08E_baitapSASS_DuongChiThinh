@@ -1,0 +1,63 @@
+.footer {
+  background-image: url(/images/footer_background.jpg);
+  background-size: 125%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 32.8125rem;
+  padding-top: 8rem;
+}
+
+.fa {
+  color: $color-white;
+  margin: 0 0.9375rem 0 0;
+  transition: all 0.3s ease;
+  font-size: 0.9375rem;
+  display: inline-block;
+}
+
+.fa:hover {
+  color: $font-color;
+  text-decoration: none;
+}
+
+.footer__item {
+  padding: 0 1.5625rem;
+  h3 {
+    @include styleText(23.25px, 700, $color-white);
+    margin-bottom: 25px;
+  }
+  p,
+  > a {
+    @include styleText(13.5px, 400, $color-white);
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+    display: block;
+  }
+  > a {
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    &:hover {
+      opacity: 0.8;
+      text-decoration: none;
+    }
+  }
+  input {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 3.125rem;
+    padding: 10px;
+    transition: all 0.3s ease;
+    text-align: center;
+    caret-color: $color-white;
+    margin-bottom: 0.625rem;
+    &::placeholder {
+      @include styleText(13.5px, 400, $color-white);
+      text-align: center;
+    }
+    &:focus {
+      border: 1px solid $color-white;
+      outline: none;
+    }
+  }
+}
