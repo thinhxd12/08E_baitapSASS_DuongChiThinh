@@ -14,6 +14,7 @@
     border-radius: 0.625rem;
     overflow: hidden;
     margin-bottom: 2.5rem;
+    transition: all 650ms ease-in-out;
     .team__item__info {
       background-color: $bg-color;
       padding: 1.875rem;
@@ -39,12 +40,11 @@
         }
       }
       img {
-        transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+        transition: transform 650ms ease-in-out;
       }
     }
-    &:hover{
-        box-shadow: 0 10px 50px $font-color;
+    &:hover {
+      box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
     }
   }
 }
-
