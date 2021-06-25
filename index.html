@@ -21,9 +21,9 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__content container">
-      <nav class="navbar navbar-expand-sm p-0">
+      <nav class="navbar navbar-expand-sm p-0 navbar__custom">
         <a class="navbar-brand" href="#">
           <img src="./images/crest.png" class="img-fluid">
         </a>
@@ -81,7 +81,7 @@
     </div>
   </section>
   <section class="team">
-    <div class="team__content container">
+    <div class="team__content container py-5">
       <div class="row">
         <div class="col-md-3 col-6">
           <div class="team__item">
@@ -191,36 +191,26 @@
         <div class="col-md-5 col-12 pt-5">
           <div class="registration__form pt-5 animate__animated animate__fadeIn">
             <h3 class="mb-5 text-center">Find Your Course</h3>
-            <div class="d-flex mb-3">
-              <div class="input-group mr-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="fa fa-user"></i></span>
-                </div>
-                <input class="form-control" placeholder="Name">
+            <div class="registration__input">
+              <div class="registration__input__item">
+                <i class="fa fa-user"></i><input class="form-control" placeholder="Name">
               </div>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="fa fa-envelope"></i></span>
-                </div>
-                <input class="form-control" placeholder="E-mail">
+              <div class="registration__input__item">
+                <i class="fa fa-envelope"></i><input class="form-control" placeholder="E-mail">
               </div>
             </div>
-
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" for="inputGroupSelect01"><i class="fa fa-graduation-cap"></i></span>
-              </div>
-              <select class="custom-select" id="inputGroupSelect01">
+            <div class="registration__select">
+              <i class="fa fa-graduation-cap"></i>
+              <select class="registration__select__item">
                 <option selected>English</option>
                 <option value="1">French</option>
                 <option value="2">Spanish</option>
                 <option value="3">German</option>
               </select>
             </div>
-
-            <div class="registration__form__message d-flex">
+            <div class="registration__message">
+              <textarea rows="4" placeholder="Message"></textarea>
               <i class="fa fa-envelope"></i>
-              <textarea rows="5" placeholder="Message"></textarea>
             </div>
 
             <div class="btn__primary my-5">

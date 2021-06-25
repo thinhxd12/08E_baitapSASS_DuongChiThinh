@@ -18,6 +18,10 @@
   animation: slide-in-top 0.5s ease-in;
 }
 
+.hide-header {
+  visibility: hidden;
+}
+
 @keyframes slide-in-body {
   0% {
     transform: translateY(0%);
