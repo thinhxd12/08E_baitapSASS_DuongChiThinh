@@ -16,22 +16,23 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header class="header">
     <div class="header__content container">
-      <nav class="navbar navbar-expand-sm">
+      <nav class="navbar navbar-expand-sm p-0">
         <a class="navbar-brand" href="#">
           <img src="./images/crest.png" class="img-fluid">
         </a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
           aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0 align-items-center">
+          <ul class="navbar-nav ml-auto align-items-center">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home</a>
             </li>
@@ -65,14 +66,16 @@
     </div>
   </header>
   <section class="carousel position-relative">
-    <div class="carousel__content container">
-      <div class="row">
-        <div class="carousel__info col-md-6">
-          <h4 class="txt__title">ABOUT US</h4>
-          <h1 class="txt__header">The language teaching experts</h1>
-        </div>
-        <div class="carousel__img col-md-6">
-          <img src="./images/hero_team.png" class="img-fluid">
+    <div class="carousel__content">
+      <div class="container">
+        <div class="row">
+          <div class="carousel__info col-md-6 animate__animated animate__fadeInLeft">
+            <h4 class="txt__title">ABOUT US</h4>
+            <h1 class="txt__header">The language teaching experts</h1>
+          </div>
+          <div class="carousel__img col-md-6 animate__animated animate__fadeIn">
+            <img src="./images/hero_team.png" class="img-fluid">
+          </div>
         </div>
       </div>
     </div>
@@ -80,7 +83,7 @@
   <section class="team">
     <div class="team__content container">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="team__item">
             <div class="team__item__img">
               <img src="./images/teacher_1.jpg" class="img-fluid">
@@ -92,7 +95,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="team__item">
             <div class="team__item__img">
               <img src="./images/teacher_2.jpg" class="img-fluid">
@@ -104,7 +107,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="team__item">
             <div class="team__item__img">
               <img src="./images/teacher_3.jpg" class="img-fluid">
@@ -116,7 +119,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="team__item">
             <div class="team__item__img">
               <img src="./images/teacher_4.jpg" class="img-fluid">
@@ -128,7 +131,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="team__item">
             <div class="team__item__img">
               <img src="./images/teacher_5.jpg" class="img-fluid">
@@ -140,7 +143,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="team__item">
             <div class="team__item__img">
               <img src="./images/teacher_6.jpg" class="img-fluid">
@@ -152,7 +155,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="team__item">
             <div class="team__item__img">
               <img src="./images/teacher_7.jpg" class="img-fluid">
@@ -164,7 +167,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="team__item">
             <div class="team__item__img">
               <img src="./images/teacher_8.jpg" class="img-fluid">
@@ -182,11 +185,11 @@
   <section class="registration py-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-7 d-flex justify-content-end">
+        <div class="col-md-7 col-12 d-flex justify-content-end  animate__animated animate__fadeInLeft">
           <img src="./images/conatct_inner.png" class="img-fluid">
         </div>
-        <div class="col-md-5">
-          <div class="registration__form">
+        <div class="col-md-5 col-12 pt-5">
+          <div class="registration__form pt-5 animate__animated animate__fadeIn">
             <h3 class="mb-5 text-center">Find Your Course</h3>
             <div class="d-flex mb-3">
               <div class="input-group mr-3">
@@ -231,7 +234,7 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="footer__item">
             <h3>Contact us</h3>
             <p><i class="fa fa-map-marker"></i>Franklin St, Greenpoint Ave</p>
@@ -245,7 +248,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="footer__item">
             <h3>Quick Links</h3>
             <a href="#">Home</a>
@@ -254,7 +257,7 @@
             <a href="#">Blog</a>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="footer__item">
             <h3>About</h3>
             <a href="#">Home</a>
@@ -263,7 +266,7 @@
             <a href="#">Blog</a>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="footer__item">
             <h3>Newsletter</h3>
             <input placeholder="Your email">

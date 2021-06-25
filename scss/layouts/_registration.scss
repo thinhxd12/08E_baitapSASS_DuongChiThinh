@@ -12,7 +12,7 @@
     @include styleText(2.3438rem, 600, $header-color);
   }
   border-radius: 0.625rem;
-  box-shadow: 0 30px 30px -10px rgba(0,0,0,.2);
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
   background: $bg-color;
 }
 

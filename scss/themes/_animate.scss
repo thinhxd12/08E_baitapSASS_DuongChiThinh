@@ -1,0 +1,59 @@
+.custom-header {
+  height: 3rem;
+  background-color: $bg-color;
+  box-shadow: 0 0 10px 0 rgba(204, 204, 204, 0.5);
+  .navbar-nav {
+    height: 3rem;
+    .btn__primary {
+      padding: 6px 20px;
+    }
+  }
+  .navbar-brand {
+    display: none;
+  }
+  animation: slide-in-body 0.5s ease-in;
+}
+
+.top-header {
+  animation: slide-in-top 0.5s ease-in;
+}
+
+@keyframes slide-in-body {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-100%);
+    background-color: rgba($color: #ffffff, $alpha: 0.9);
+  }
+  50% {
+    transform: translateY(-100%);
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+  }
+  100% {
+    transform: translateY(0%);
+    background-color: transparent;
+  }
+}
+
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 2s;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 1.5s;
+}
+
+.animate__animated.animate__slideInDown {
+  --animate-duration: 0.3s;
+  --animation-timing-function: ease;
+}

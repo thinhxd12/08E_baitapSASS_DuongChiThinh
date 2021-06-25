@@ -45,12 +45,13 @@
   input {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 3.125rem;
+    border-radius: 2.5rem;
     padding: 10px;
     transition: all 0.3s ease;
     text-align: center;
     caret-color: $color-white;
     margin-bottom: 0.625rem;
+    width: 15rem;
     &::placeholder {
       @include styleText(13.5px, 400, $color-white);
       text-align: center;

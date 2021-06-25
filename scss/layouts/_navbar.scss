@@ -1,12 +1,11 @@
 .header {
   top: 0;
   z-index: 99;
-  position: absolute;
+  position: fixed;
   width: 100%;
+  box-sizing: border-box;
   .header__content {
     .navbar {
-      max-height: 5rem;
-      padding: 0;
       .navbar-brand {
         img {
           width: 5rem;
@@ -24,6 +23,10 @@
               color: $primary-color;
             }
           }
+          .btn__primary {
+            margin: 0.375rem;
+            padding: 8px 20px;
+          }
         }
       }
     }
@@ -31,15 +34,17 @@
 }
 
 .header__social {
-  margin-left: 0.3125rem;
   a {
     line-height: 2.375rem;
-    margin-left: 0.625rem;
+    .fa {
+      margin: 0 0 0 0.625rem;
+    }
     &:hover i {
       color: $primary-color;
     }
     i {
       transition: all 0.3s ease;
+      color: $header-color;
     }
   }
 }
